@@ -1,18 +1,18 @@
 import serial
 
 #variaveis que podem ser alteradas
-porta = "COM7"
+porta = "COM4"
 baud = 115200
 amostra = 3000
-arquivo = "logger.csv"
+arquivo = "semAtiv.csv"
 
-linha = 0
+
 
 try:
     ser = serial.Serial(porta,baud)
     ser.flushInput()
     print("Abrindo Serial")
-
+    linha = 0
     while linha <= amostra:
          data = str(ser.readline().decode("utf-8"))
          print(data)
