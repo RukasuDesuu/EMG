@@ -1,8 +1,11 @@
 import serial
+
+#variaveis que podem ser alteradas
 porta = "COM7"
 baud = 115200
-arquivo = "logger.csv"
 amostra = 3000
+arquivo = "logger.csv"
+
 linha = 0
 
 try:
