@@ -1,10 +1,10 @@
 import serial
 
 #variaveis que podem ser alteradas
-porta = "COM4"
-baud = 115200
+porta = "COM7"
+baud = 9600
 amostra = 3000
-arquivo = "semAtiv.csv"
+arquivo = "amostraSemAtividade_0.csv"
 
 
 
@@ -20,8 +20,8 @@ try:
          file.write(data)
          linha = linha+1
     print("Final de leituras")
-    file.close()
     ser.close()
+    file.close()
 
 except:
     print("ERRO: Porta Nao Encontrada ou Ocupada")
