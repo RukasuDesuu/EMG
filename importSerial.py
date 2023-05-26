@@ -3,7 +3,7 @@ import serial
 #variaveis que podem ser alteradas
 porta = "COM7"
 baud = 9600
-amostra = 3000
+amostra = 1000
 arquivo = "amostraSemAtividade_0.csv"
 
 
