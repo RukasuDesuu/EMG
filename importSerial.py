@@ -4,7 +4,7 @@ import serial
 porta = "COM7"
 baud = 9600
 amostra = 1000
-arquivo = "amostraSemAtividade_0.csv"
+arquivo = "amostraComAtividade_5.csv"
 
 
 
@@ -24,6 +24,7 @@ try:
     file.close()
 
 except:
+    ser.close()
     print("ERRO: Porta Nao Encontrada ou Ocupada")
 
 
