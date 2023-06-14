@@ -1,7 +1,6 @@
 void setup() {
   // initialize the serial communication:
   Serial.begin(9600);
-  Serial.println(); // blank line in serial ...
   pinMode(41, INPUT); // Setup for leads off detection LO +
   pinMode(40, INPUT); // Setup for leads off detection LO -
 }

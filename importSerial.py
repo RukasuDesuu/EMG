@@ -1,13 +1,11 @@
 import serial
 
 #variaveis que podem ser alteradas
-porta = "COM7"
+porta = "COM4"
 baud = 9600
 amostra = 1000
-arquivo = "amostraComAtividade_5.csv"
-
-
-
+arquivo = "amostra2kg_2.csv"
+ 
 try:
     ser = serial.Serial(porta,baud)
     ser.flushInput()
