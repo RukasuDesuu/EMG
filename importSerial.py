@@ -1,10 +1,10 @@
 import serial
 
 #variaveis que podem ser alteradas
-porta = "COM4"
+porta = "COM7"
 baud = 9600
 amostra = 1000
-arquivo = "testeca.csv"
+arquivo = "amostra1kg_1.csv"
  
 try:
     ser = serial.Serial(porta,baud)
