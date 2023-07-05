@@ -4,7 +4,7 @@ import serial
 porta = "COM7"
 baud = 9600
 amostra = 1000
-arquivo = "amostra1kg_1.csv"
+arquivo = "amostra6kg_2.csv"
  
 try:
     ser = serial.Serial(porta,baud)
