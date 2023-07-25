@@ -3,7 +3,7 @@ from time import sleep
 import serial
 
 #variaveis que podem ser alteradas
-porta = "COM4"
+porta = "COM7"
 baud = 9600
 amostra = 1000
 pesos = [1,2,3,4,5,6]
@@ -33,5 +33,7 @@ except:
 for i in pesos:
     for x in range(3):
         print(str(x+1)+"º amostra de "+str(i)+"kg")
-        sleep(5)
+        sleep(10)
+        print("LENDO")
+        sleep(1)
         ImportSerial("amostra"+str(i)+"kg_"+str(x)+".csv")
