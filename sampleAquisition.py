@@ -6,7 +6,7 @@ import serial
 porta = "COM7"
 baud = 9600
 amostra = 1000
-pesos = [1,2,3,4,5,6]
+pesos = [0,1]
 
 def ImportSerial(arquivo:str): 
         ser.flushInput()
@@ -31,9 +31,9 @@ except:
     print("ERRO: Porta Nao Encontrada ou Ocupada")
     sys.exit(-1)
 for i in pesos:
-    for x in range(3):
+    for x in range(4):
         print(str(x+1)+"º amostra de "+str(i)+"kg")
         sleep(10)
         print("LENDO")
         sleep(1)
-        ImportSerial("amostra"+str(i)+"kg_"+str(x)+".csv")
+        ImportSerial("amostra"+str(i)+"_"+str(x)+".csv")
