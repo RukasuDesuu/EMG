@@ -33,7 +33,7 @@ except:
 for i in pesos:
     for x in range(4):
         print(str(x+1)+"º amostra de "+str(i)+"kg")
-        sleep(10)
+        sleep(5)
         print("LENDO")
         sleep(1)
         ImportSerial("amostra"+str(i)+"_"+str(x)+".csv")
