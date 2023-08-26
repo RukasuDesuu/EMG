@@ -3,13 +3,13 @@ from time import sleep
 import serial
 
 #variaveis que podem ser alteradas
-porta = "COM7"
+porta = "COM5"
 baud = 9600
 amostra = 1000
 pesos = [0,1]
 
 def ImportSerial(arquivo:str): 
-        ser.flushInput()
+        ser.flushInput()    
         print("Abrindo Serial")
         linha = 0
         while linha <= amostra:
